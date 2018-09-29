@@ -7,12 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D50E6970215B5EE40035A0E6 /* GameUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E696F215B5EE40035A0E6 /* GameUS.swift */; };
+		D50E6972215C7E020035A0E6 /* NetworkRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6971215C7E020035A0E6 /* NetworkRequester.swift */; };
+		D50E6974215DB2990035A0E6 /* GameEU.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6973215DB2990035A0E6 /* GameEU.swift */; };
+		D50E6977215DB6930035A0E6 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6976215DB6930035A0E6 /* DateFormatter+Extensions.swift */; };
+		D50E6979215EC3580035A0E6 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6978215EC3580035A0E6 /* Optional+Extensions.swift */; };
+		D50E697B215EC8210035A0E6 /* BuildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E697A215EC8210035A0E6 /* BuildInfo.swift */; };
+		D50E697D215F00250035A0E6 /* EshopRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E697C215F00250035A0E6 /* EshopRestClient.swift */; };
+		D50E698A215F2B4B0035A0E6 /* NintendoSwitchEshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CE6F5C21570D7F00DF67AB /* NintendoSwitchEshop.framework */; };
+		D50E6994215F2BEE0035A0E6 /* GamePropertyCheckingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6993215F2BEE0035A0E6 /* GamePropertyCheckingTests.swift */; };
+		D50E6996215F2C160035A0E6 /* FetchingGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6995215F2C160035A0E6 /* FetchingGamesTests.swift */; };
+		D50E699A215F2E0E0035A0E6 /* AmericaGamesSampleJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = D50E6998215F2E0E0035A0E6 /* AmericaGamesSampleJson.txt */; };
+		D50E699B215F2E0E0035A0E6 /* EuropeGamesSampleJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = D50E6999215F2E0E0035A0E6 /* EuropeGamesSampleJson.txt */; };
 		D5CE6F6621570D8000DF67AB /* NintendoSwitchEshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CE6F5C21570D7F00DF67AB /* NintendoSwitchEshop.framework */; };
 		D5CE6F6B21570D8000DF67AB /* NintendoSwitchEshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE6F6A21570D8000DF67AB /* NintendoSwitchEshopTests.swift */; };
 		D5CE6F6D21570D8000DF67AB /* NintendoSwitchEshop.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CE6F5F21570D7F00DF67AB /* NintendoSwitchEshop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5CE6F7721570FA700DF67AB /* NintendoSwitchEshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE6F7621570FA700DF67AB /* NintendoSwitchEshop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D50E698B215F2B4B0035A0E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5CE6F5321570D7F00DF67AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5CE6F5B21570D7F00DF67AB;
+			remoteInfo = NintendoSwitchEshop;
+		};
 		D5CE6F6721570D8000DF67AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D5CE6F5321570D7F00DF67AB /* Project object */;
@@ -23,15 +43,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D50E696F215B5EE40035A0E6 /* GameUS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUS.swift; sourceTree = "<group>"; };
+		D50E6971215C7E020035A0E6 /* NetworkRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequester.swift; sourceTree = "<group>"; };
+		D50E6973215DB2990035A0E6 /* GameEU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEU.swift; sourceTree = "<group>"; };
+		D50E6976215DB6930035A0E6 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		D50E6978215EC3580035A0E6 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		D50E697A215EC8210035A0E6 /* BuildInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfo.swift; sourceTree = "<group>"; };
+		D50E697C215F00250035A0E6 /* EshopRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EshopRestClient.swift; sourceTree = "<group>"; };
+		D50E6985215F2B4B0035A0E6 /* NintendoSwitchEshopIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NintendoSwitchEshopIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50E6989215F2B4B0035A0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D50E6993215F2BEE0035A0E6 /* GamePropertyCheckingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePropertyCheckingTests.swift; sourceTree = "<group>"; };
+		D50E6995215F2C160035A0E6 /* FetchingGamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingGamesTests.swift; sourceTree = "<group>"; };
+		D50E6998215F2E0E0035A0E6 /* AmericaGamesSampleJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AmericaGamesSampleJson.txt; sourceTree = "<group>"; };
+		D50E6999215F2E0E0035A0E6 /* EuropeGamesSampleJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EuropeGamesSampleJson.txt; sourceTree = "<group>"; };
 		D5CE6F5C21570D7F00DF67AB /* NintendoSwitchEshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NintendoSwitchEshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CE6F5F21570D7F00DF67AB /* NintendoSwitchEshop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NintendoSwitchEshop.h; sourceTree = "<group>"; };
 		D5CE6F6021570D7F00DF67AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CE6F6521570D8000DF67AB /* NintendoSwitchEshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NintendoSwitchEshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CE6F6A21570D8000DF67AB /* NintendoSwitchEshopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NintendoSwitchEshopTests.swift; sourceTree = "<group>"; };
 		D5CE6F6C21570D8000DF67AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5CE6F7621570FA700DF67AB /* NintendoSwitchEshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NintendoSwitchEshop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D50E6982215F2B4B0035A0E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50E698A215F2B4B0035A0E6 /* NintendoSwitchEshop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5CE6F5921570D7F00DF67AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,11 +92,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D50E696E215B5EB60035A0E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D50E696F215B5EE40035A0E6 /* GameUS.swift */,
+				D50E6973215DB2990035A0E6 /* GameEU.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D50E6975215DB6830035A0E6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D50E6976215DB6930035A0E6 /* DateFormatter+Extensions.swift */,
+				D50E6978215EC3580035A0E6 /* Optional+Extensions.swift */,
+				D50E697A215EC8210035A0E6 /* BuildInfo.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D50E6986215F2B4B0035A0E6 /* NintendoSwitchEshopIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				D50E6995215F2C160035A0E6 /* FetchingGamesTests.swift */,
+				D50E6993215F2BEE0035A0E6 /* GamePropertyCheckingTests.swift */,
+				D50E6989215F2B4B0035A0E6 /* Info.plist */,
+			);
+			path = NintendoSwitchEshopIntegrationTests;
+			sourceTree = "<group>";
+		};
+		D50E6990215F2B5D0035A0E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D50E697C215F00250035A0E6 /* EshopRestClient.swift */,
+				D50E6971215C7E020035A0E6 /* NetworkRequester.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D50E6997215F2C740035A0E6 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				D50E6998215F2E0E0035A0E6 /* AmericaGamesSampleJson.txt */,
+				D50E6999215F2E0E0035A0E6 /* EuropeGamesSampleJson.txt */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
 		D5CE6F5221570D7F00DF67AB = {
 			isa = PBXGroup;
 			children = (
 				D5CE6F5E21570D7F00DF67AB /* NintendoSwitchEshop */,
 				D5CE6F6921570D8000DF67AB /* NintendoSwitchEshopTests */,
+				D50E6986215F2B4B0035A0E6 /* NintendoSwitchEshopIntegrationTests */,
 				D5CE6F5D21570D7F00DF67AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +154,7 @@
 			children = (
 				D5CE6F5C21570D7F00DF67AB /* NintendoSwitchEshop.framework */,
 				D5CE6F6521570D8000DF67AB /* NintendoSwitchEshopTests.xctest */,
+				D50E6985215F2B4B0035A0E6 /* NintendoSwitchEshopIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +162,10 @@
 		D5CE6F5E21570D7F00DF67AB /* NintendoSwitchEshop */ = {
 			isa = PBXGroup;
 			children = (
+				D5CE6F7621570FA700DF67AB /* NintendoSwitchEshop.swift */,
+				D50E6990215F2B5D0035A0E6 /* Controllers */,
+				D50E6975215DB6830035A0E6 /* Helpers */,
+				D50E696E215B5EB60035A0E6 /* Models */,
 				D5CE6F5F21570D7F00DF67AB /* NintendoSwitchEshop.h */,
 				D5CE6F6021570D7F00DF67AB /* Info.plist */,
 			);
@@ -80,6 +175,7 @@
 		D5CE6F6921570D8000DF67AB /* NintendoSwitchEshopTests */ = {
 			isa = PBXGroup;
 			children = (
+				D50E6997215F2C740035A0E6 /* TestData */,
 				D5CE6F6A21570D8000DF67AB /* NintendoSwitchEshopTests.swift */,
 				D5CE6F6C21570D8000DF67AB /* Info.plist */,
 			);
@@ -100,6 +196,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D50E6984215F2B4B0035A0E6 /* NintendoSwitchEshopIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50E698D215F2B4B0035A0E6 /* Build configuration list for PBXNativeTarget "NintendoSwitchEshopIntegrationTests" */;
+			buildPhases = (
+				D50E6981215F2B4B0035A0E6 /* Sources */,
+				D50E6982215F2B4B0035A0E6 /* Frameworks */,
+				D50E6983215F2B4B0035A0E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D50E698C215F2B4B0035A0E6 /* PBXTargetDependency */,
+			);
+			name = NintendoSwitchEshopIntegrationTests;
+			productName = NintendoSwitchEshopIntegrationTests;
+			productReference = D50E6985215F2B4B0035A0E6 /* NintendoSwitchEshopIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D5CE6F5B21570D7F00DF67AB /* NintendoSwitchEshop */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5CE6F7021570D8000DF67AB /* Build configuration list for PBXNativeTarget "NintendoSwitchEshop" */;
@@ -146,8 +260,12 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = bobbyrohweder;
 				TargetAttributes = {
+					D50E6984215F2B4B0035A0E6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					D5CE6F5B21570D7F00DF67AB = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					D5CE6F6421570D8000DF67AB = {
 						CreatedOnToolsVersion = 10.0;
@@ -168,11 +286,19 @@
 			targets = (
 				D5CE6F5B21570D7F00DF67AB /* NintendoSwitchEshop */,
 				D5CE6F6421570D8000DF67AB /* NintendoSwitchEshopTests */,
+				D50E6984215F2B4B0035A0E6 /* NintendoSwitchEshopIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D50E6983215F2B4B0035A0E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5CE6F5A21570D7F00DF67AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,16 +310,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50E699B215F2E0E0035A0E6 /* EuropeGamesSampleJson.txt in Resources */,
+				D50E699A215F2E0E0035A0E6 /* AmericaGamesSampleJson.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D50E6981215F2B4B0035A0E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50E6996215F2C160035A0E6 /* FetchingGamesTests.swift in Sources */,
+				D50E6994215F2BEE0035A0E6 /* GamePropertyCheckingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5CE6F5821570D7F00DF67AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CE6F7721570FA700DF67AB /* NintendoSwitchEshop.swift in Sources */,
+				D50E6970215B5EE40035A0E6 /* GameUS.swift in Sources */,
+				D50E697D215F00250035A0E6 /* EshopRestClient.swift in Sources */,
+				D50E6972215C7E020035A0E6 /* NetworkRequester.swift in Sources */,
+				D50E6979215EC3580035A0E6 /* Optional+Extensions.swift in Sources */,
+				D50E697B215EC8210035A0E6 /* BuildInfo.swift in Sources */,
+				D50E6974215DB2990035A0E6 /* GameEU.swift in Sources */,
+				D50E6977215DB6930035A0E6 /* DateFormatter+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +353,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D50E698C215F2B4B0035A0E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5CE6F5B21570D7F00DF67AB /* NintendoSwitchEshop */;
+			targetProxy = D50E698B215F2B4B0035A0E6 /* PBXContainerItemProxy */;
+		};
 		D5CE6F6821570D8000DF67AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D5CE6F5B21570D7F00DF67AB /* NintendoSwitchEshop */;
@@ -216,6 +366,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D50E698E215F2B4B0035A0E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R97AJFP6M;
+				INFOPLIST_FILE = NintendoSwitchEshopIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bobbyrohweder.NintendoSwitchEshopIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D50E698F215F2B4B0035A0E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R97AJFP6M;
+				INFOPLIST_FILE = NintendoSwitchEshopIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bobbyrohweder.NintendoSwitchEshopIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D5CE6F6E21570D8000DF67AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -341,6 +527,7 @@
 		D5CE6F7121570D8000DF67AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +545,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bobbyrohweder.NintendoSwitchEshop;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +554,7 @@
 		D5CE6F7221570D8000DF67AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +580,7 @@
 		D5CE6F7421570D8000DF67AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5R97AJFP6M;
 				INFOPLIST_FILE = NintendoSwitchEshopTests/Info.plist;
@@ -409,6 +599,7 @@
 		D5CE6F7521570D8000DF67AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5R97AJFP6M;
 				INFOPLIST_FILE = NintendoSwitchEshopTests/Info.plist;
@@ -427,6 +618,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D50E698D215F2B4B0035A0E6 /* Build configuration list for PBXNativeTarget "NintendoSwitchEshopIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50E698E215F2B4B0035A0E6 /* Debug */,
+				D50E698F215F2B4B0035A0E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D5CE6F5621570D7F00DF67AB /* Build configuration list for PBXProject "NintendoSwitchEshop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
