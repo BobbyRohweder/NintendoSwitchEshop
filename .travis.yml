@@ -1,21 +1,14 @@
 language: objective-c
 osx_image: xcode10
-sudo: false
+xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone XS
 
 before_install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
-script:
-  - xcodebuild [DEFAULT_OPTIONS] CODE_SIGNING_REQUIRED=NO
-
 xcode_project: NintendoSwitchEshop.xcodeproj
-
-matrix:
-  include:
-  - osx_image: xcode10
-    env: SDK="iphonesimulator12.0" DESTINATION="name=iPhone XS,OS=12.0" SCHEME="NintendoSwitchEshop"
-  - osx_image: xcode10
-    env: SDK="iphonesimulator12.0" DESTINATION="name=iPhone XS,OS=12.0" SCHEME="NintendoSwitchEshopIntegrationTests"
+xcode_scheme:
+  - NintendoSwitchEshop
+  - NintendoSwitchEshopIntegrationTests
   
 # Upload our testing coverage to codecov.io.
 after_success:
