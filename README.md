@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/BobbyRohweder/NintendoSwitchEshop.svg?branch=master)](https://travis-ci.com/BobbyRohweder/NintendoSwitchEshop)
+
 # NintendoSwitchEshop
 
 ## About
