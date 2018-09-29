@@ -6,7 +6,7 @@ import XCTest
 
 @testable import NintendoSwitchEshop
 
-class DateFormatterExtensionTests: NSObject {
+class DateFormatterExtensionTests: XCTestCase {
     
     func testIso8601() {
         let dateFormatter = DateFormatter.iso8601

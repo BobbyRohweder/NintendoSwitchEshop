@@ -1,4 +1,8 @@
 [![Build Status](https://travis-ci.com/BobbyRohweder/NintendoSwitchEshop.svg?branch=master)](https://travis-ci.com/BobbyRohweder/NintendoSwitchEshop)
+[![codecov](https://codecov.io/gh/BobbyRohweder/NintendoSwitchEshop/branch/master/graph/badge.svg)](https://codecov.io/gh/BobbyRohweder/NintendoSwitchEshop)
+![](https://img.shields.io/badge/platform-ios-lightgrey.svg)
+![Swift 4.2](https://img.shields.io/badge/swift-4.2-orange.svg)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/BobbyRohweder)
 
 # NintendoSwitchEshop
 
@@ -29,7 +33,7 @@ nintendoSwitchEshop.getGamesInEurope { games, error in
 
 ## Contribute
 
-Any is free to contribute.
+Anyone is free to contribute.
 Just open a Pull Request or Issue.
 Tests are preferred for new features.
 
