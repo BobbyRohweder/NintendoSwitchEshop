@@ -16,10 +16,15 @@ enum NintendoSwitchEshopError: Error {
 
 public class NintendoSwitchEshop: NSObject {
     
-    let eshopRestClient: EshopRestClient
+    let eshopRestClient: AnyEshopRestClient
     
-    public override init() {
-        eshopRestClient = EshopRestClient()
+    public override convenience init() {
+        let eshopRestClient = EshopRestClient(networkRequester: NetworkRequester())
+        self.init(eshopRestClient: eshopRestClient)
+    }
+    
+    init(eshopRestClient: AnyEshopRestClient) {
+        self.eshopRestClient = eshopRestClient
     }
     
     public func getGamesInAmerica(completion: @escaping ([GameUS], Error?) -> Void) {

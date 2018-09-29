@@ -4,11 +4,22 @@
 
 import UIKit
 
-class EshopRestClient: NSObject {
+protocol AnyEshopRestClient {
+    func getGamesInAmerica(offset: Int, completion: @escaping (Any?, Error?) -> Void)
+    func getGamesInEurope(completion: @escaping (Any?, Error?) -> Void)
+}
+
+class EshopRestClient: NSObject, AnyEshopRestClient {
     
     private struct Constants {
-        static let getGamesUSUrl = "http://www.nintendo.com/json/content/get/filter/game"
-        static let getGamesEUUrl = "http://search.nintendo-europe.com/{locale}/select"
+        static let getGamesUSUrl = "https://www.nintendo.com/json/content/get/filter/game"
+        static let getGamesEUUrl = "https://search.nintendo-europe.com/{locale}/select"
+    }
+    
+    private let networkRequester: AnyNetworkRequester
+    
+    init(networkRequester: AnyNetworkRequester) {
+        self.networkRequester = networkRequester
     }
     
     func getGamesInAmerica(offset: Int, completion: @escaping (Any?, Error?) -> Void) {
@@ -26,7 +37,7 @@ class EshopRestClient: NSObject {
         request.httpMethod = "GET"
         
         print("Requesting US Games")
-        NetworkRequester.request(request: request) { jsonObject, error in
+        networkRequester.request(request: request) { jsonObject, error in
             completion(jsonObject, error)
         }
     }
@@ -48,7 +59,7 @@ class EshopRestClient: NSObject {
         request.httpMethod = "GET"
         
         print("Requesting EU Games")
-        NetworkRequester.request(request: request) { jsonObject, error in
+        networkRequester.request(request: request) { jsonObject, error in
             completion(jsonObject, nil)
         }
     }

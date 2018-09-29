@@ -8,11 +8,25 @@ import XCTest
 
 class GamePropertyCheckingTests: XCTestCase {
     
+    var eshopRestClient: EshopRestClient!
+    
+    override func setUp() {
+        super.setUp()
+        
+        eshopRestClient = EshopRestClient(networkRequester: NetworkRequester())
+    }
+    
+    override func tearDown() {
+        eshopRestClient = nil
+        
+        super.tearDown()
+    }
+    
     func testGameUSPropertiesAreUsed() {
         let getExpectation = expectation(description: "gamesExpectation")
         var jsonObject: Any?
         
-        EshopRestClient().getGamesInAmerica(offset: 0) { json, error in
+        eshopRestClient.getGamesInAmerica(offset: 0) { json, error in
             XCTAssertNil(error)
             jsonObject = json
             getExpectation.fulfill()
@@ -52,7 +66,7 @@ class GamePropertyCheckingTests: XCTestCase {
         let getExpectation = expectation(description: "gamesExpectation")
         var jsonObject: Any?
         
-        EshopRestClient().getGamesInEurope { json, error in
+        eshopRestClient.getGamesInEurope { json, error in
             XCTAssertNil(error)
             jsonObject = json
             getExpectation.fulfill()

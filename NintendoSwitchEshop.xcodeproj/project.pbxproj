@@ -17,8 +17,12 @@
 		D50E698A215F2B4B0035A0E6 /* NintendoSwitchEshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CE6F5C21570D7F00DF67AB /* NintendoSwitchEshop.framework */; };
 		D50E6994215F2BEE0035A0E6 /* GamePropertyCheckingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6993215F2BEE0035A0E6 /* GamePropertyCheckingTests.swift */; };
 		D50E6996215F2C160035A0E6 /* FetchingGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6995215F2C160035A0E6 /* FetchingGamesTests.swift */; };
-		D50E699A215F2E0E0035A0E6 /* AmericaGamesSampleJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = D50E6998215F2E0E0035A0E6 /* AmericaGamesSampleJson.txt */; };
-		D50E699B215F2E0E0035A0E6 /* EuropeGamesSampleJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = D50E6999215F2E0E0035A0E6 /* EuropeGamesSampleJson.txt */; };
+		D50E699A215F2E0E0035A0E6 /* AmericaGamesSampleJson.json in Resources */ = {isa = PBXBuildFile; fileRef = D50E6998215F2E0E0035A0E6 /* AmericaGamesSampleJson.json */; };
+		D50E699B215F2E0E0035A0E6 /* EuropeGamesSampleJson.json in Resources */ = {isa = PBXBuildFile; fileRef = D50E6999215F2E0E0035A0E6 /* EuropeGamesSampleJson.json */; };
+		D50E699E215F33EE0035A0E6 /* DateFormatterExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E699D215F33EE0035A0E6 /* DateFormatterExtensionTests.swift */; };
+		D50E69A2215F37410035A0E6 /* FakeNetworkRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E69A1215F37410035A0E6 /* FakeNetworkRequester.swift */; };
+		D50E69A6215F3BB10035A0E6 /* FakeEshopRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E69A5215F3BB10035A0E6 /* FakeEshopRestClient.swift */; };
+		D50E69AA215F3C070035A0E6 /* EshopRestClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E69A9215F3C070035A0E6 /* EshopRestClientTests.swift */; };
 		D5CE6F6621570D8000DF67AB /* NintendoSwitchEshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CE6F5C21570D7F00DF67AB /* NintendoSwitchEshop.framework */; };
 		D5CE6F6B21570D8000DF67AB /* NintendoSwitchEshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE6F6A21570D8000DF67AB /* NintendoSwitchEshopTests.swift */; };
 		D5CE6F6D21570D8000DF67AB /* NintendoSwitchEshop.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CE6F5F21570D7F00DF67AB /* NintendoSwitchEshop.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,8 +58,12 @@
 		D50E6989215F2B4B0035A0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D50E6993215F2BEE0035A0E6 /* GamePropertyCheckingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePropertyCheckingTests.swift; sourceTree = "<group>"; };
 		D50E6995215F2C160035A0E6 /* FetchingGamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingGamesTests.swift; sourceTree = "<group>"; };
-		D50E6998215F2E0E0035A0E6 /* AmericaGamesSampleJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AmericaGamesSampleJson.txt; sourceTree = "<group>"; };
-		D50E6999215F2E0E0035A0E6 /* EuropeGamesSampleJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EuropeGamesSampleJson.txt; sourceTree = "<group>"; };
+		D50E6998215F2E0E0035A0E6 /* AmericaGamesSampleJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AmericaGamesSampleJson.json; sourceTree = "<group>"; };
+		D50E6999215F2E0E0035A0E6 /* EuropeGamesSampleJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EuropeGamesSampleJson.json; sourceTree = "<group>"; };
+		D50E699D215F33EE0035A0E6 /* DateFormatterExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensionTests.swift; sourceTree = "<group>"; };
+		D50E69A1215F37410035A0E6 /* FakeNetworkRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkRequester.swift; sourceTree = "<group>"; };
+		D50E69A5215F3BB10035A0E6 /* FakeEshopRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEshopRestClient.swift; sourceTree = "<group>"; };
+		D50E69A9215F3C070035A0E6 /* EshopRestClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EshopRestClientTests.swift; sourceTree = "<group>"; };
 		D5CE6F5C21570D7F00DF67AB /* NintendoSwitchEshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NintendoSwitchEshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CE6F5F21570D7F00DF67AB /* NintendoSwitchEshop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NintendoSwitchEshop.h; sourceTree = "<group>"; };
 		D5CE6F6021570D7F00DF67AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,10 +141,35 @@
 		D50E6997215F2C740035A0E6 /* TestData */ = {
 			isa = PBXGroup;
 			children = (
-				D50E6998215F2E0E0035A0E6 /* AmericaGamesSampleJson.txt */,
-				D50E6999215F2E0E0035A0E6 /* EuropeGamesSampleJson.txt */,
+				D50E6998215F2E0E0035A0E6 /* AmericaGamesSampleJson.json */,
+				D50E6999215F2E0E0035A0E6 /* EuropeGamesSampleJson.json */,
 			);
 			path = TestData;
+			sourceTree = "<group>";
+		};
+		D50E699C215F33CC0035A0E6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D50E699D215F33EE0035A0E6 /* DateFormatterExtensionTests.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D50E699F215F36B80035A0E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D50E69A9215F3C070035A0E6 /* EshopRestClientTests.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D50E69A0215F37290035A0E6 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				D50E69A1215F37410035A0E6 /* FakeNetworkRequester.swift */,
+				D50E69A5215F3BB10035A0E6 /* FakeEshopRestClient.swift */,
+			);
+			path = Fakes;
 			sourceTree = "<group>";
 		};
 		D5CE6F5221570D7F00DF67AB = {
@@ -175,7 +208,10 @@
 		D5CE6F6921570D8000DF67AB /* NintendoSwitchEshopTests */ = {
 			isa = PBXGroup;
 			children = (
+				D50E699F215F36B80035A0E6 /* Controllers */,
+				D50E699C215F33CC0035A0E6 /* Helpers */,
 				D50E6997215F2C740035A0E6 /* TestData */,
+				D50E69A0215F37290035A0E6 /* Fakes */,
 				D5CE6F6A21570D8000DF67AB /* NintendoSwitchEshopTests.swift */,
 				D5CE6F6C21570D8000DF67AB /* Info.plist */,
 			);
@@ -310,8 +346,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D50E699B215F2E0E0035A0E6 /* EuropeGamesSampleJson.txt in Resources */,
-				D50E699A215F2E0E0035A0E6 /* AmericaGamesSampleJson.txt in Resources */,
+				D50E699B215F2E0E0035A0E6 /* EuropeGamesSampleJson.json in Resources */,
+				D50E699A215F2E0E0035A0E6 /* AmericaGamesSampleJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50E699E215F33EE0035A0E6 /* DateFormatterExtensionTests.swift in Sources */,
+				D50E69A6215F3BB10035A0E6 /* FakeEshopRestClient.swift in Sources */,
+				D50E69A2215F37410035A0E6 /* FakeNetworkRequester.swift in Sources */,
 				D5CE6F6B21570D8000DF67AB /* NintendoSwitchEshopTests.swift in Sources */,
+				D50E69AA215F3C070035A0E6 /* EshopRestClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

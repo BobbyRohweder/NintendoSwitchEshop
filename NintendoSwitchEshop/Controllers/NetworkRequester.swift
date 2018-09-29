@@ -8,9 +8,13 @@ enum NetworkRequesterError: Error {
     case error
 }
 
-class NetworkRequester {
+protocol AnyNetworkRequester {
+    func request(request: URLRequest, completion: @escaping (Any?, Error?) -> Void)
+}
+
+class NetworkRequester: AnyNetworkRequester {
     
-    static func request(request: URLRequest, completion: @escaping (Any?, Error?) -> Void) {
+    func request(request: URLRequest, completion: @escaping (Any?, Error?) -> Void) {
         let task = URLSession(configuration: .default).dataTask(with: request) { data, response, error in
             do {
                 guard let data = data else { return completion(nil, NetworkRequesterError.error) }

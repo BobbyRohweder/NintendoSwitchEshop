@@ -6,73 +6,72 @@ import Foundation
 
 public struct GameEU {
     
+    let addOnContent: Bool?
+    let ageRatingSorting: Int
     let ageRatingType: String
     let ageRatingValue: String
+    let changeDate: Date
+    let cloudSaves: Bool?
+    let clubNintendo: Bool
+    let compatibleController: [String]?
+    let coopPlay: Bool?
     let copyright: String?
+    let dateFrom: Date
+    let datesReleasedDts: [Date]
+    let demoAvailability: Bool?
     let developer: String?
+    let digitalVersion: Bool
     let excerpt: String
-    let id: String
+    let gameCategoriesTxt: [String]
+    let gameCategory: [String]
     let gameSeries: String?
+    let gameSeriesTxt: [String]?
     let giftFinderCarouselImageUrl: String
     let giftFinderDescription: String?
     let giftFinderDetailPageImageUrl: String
     let giftFinderDetailPageStoreLink: String?
     let giftFinderWishlistImageUrl: String
+    let hdRumble: Bool?
+    let id: String
     let imageUrl: String
+    let imageUrlHorizontal: String
     let imageUrlSq: String
     let imageUrlTm: String?
-    let originallyFor: String
-    let prettyAgeRating: String
-    let prettyDate: String
-    let publisher: String?
-    let sortingTitle: String
-    let title: String
-    let type: String
-    let url: String
-    let addOnContent: Bool?
-    let clubNintendo: Bool
+    let indie: Bool?
+    let internet: Bool?
+    let languageAvailability: [String]
+    let localPlay: Bool?
+    let matchPlay: Bool?
+    let multiplayerMode: String?
     let nearFieldComm: Bool?
+    let nsuidTxt: [String]?
+    let offTvPlay: Bool?
+    let originallyFor: String
+    let paidSubscriptionRequired: Bool?
     let physicalVersion: Bool
     let playModeHandheldMode: Bool?
     let playModeTabletopMode: Bool?
     let playModeTvMode: Bool?
-    let changeDate: Date
-    let dateFrom: Date
-    let priority: Date?
-    let ageRatingSorting: Int
+    let playableOnTxt: [String]?
     let playersFrom: Int?
     let playersTo: Int?
-    let compatibleController: [String]?
-    let gameCategoriesTxt: [String]
-    let gameCategory: [String]
-    let languageAvailability: [String]
-    let nsuidTxt: [String]?
-    let playableOnTxt: [String]?
+    let prettyAgeRating: String
+    let prettyDate: String
+    let prettyGameCategoriesTxt: [String]
+    let priceDiscountPercentage: Double
+    let priceHasDiscount: Bool?
+    let priceLowest: Double
+    let priceSorting: Double
+    let priority: Date?
     let productCodeTxt: [String]?
+    let publisher: String?
+    let sortingTitle: String
     let systemNamesTxt: [String]
     let systemType: [String]
+    let title: String
     let titleExtrasTxt: [String]
-    
-    let gameSeriesTxt: [String]?
-    let paidSubscriptionRequired: Bool?
-    let priceSorting: Double
-    let imageUrlHorizontal: String
-    let multiplayerMode: String?
-    let offTvPlay: Bool?
-    let prettyGameCategoriesTxt: [String]
-    let cloudSaves: Bool?
-    let indie: Bool?
-    let digitalVersion: Bool
-    let demoAvailability: Bool?
-    let internet: Bool?
-    let priceLowest: Double
-    let localPlay: Bool?
-    let matchPlay: Bool?
-    let hdRumble: Bool?
-    let priceDiscountPercentage: Int
-    let datesReleasedDts: [Date]
-    let priceHasDiscount: Bool?
-    let coopPlay: Bool
+    let type: String
+    let url: String
     
     init?(jsonObject: Any) {
         guard let info = jsonObject as? [String: Any] else {
@@ -84,7 +83,6 @@ public struct GameEU {
         ageRatingType = info[.ageRatingType].expectedString
         ageRatingValue = info[.ageRatingValue].expectedString
         clubNintendo = info[.clubNintendo].expectedBool
-        coopPlay = info[.coopPlay].expectedBool
         digitalVersion = info[.digitalVersion].expectedBool
         excerpt = info[.excerpt].expectedString
         gameCategoriesTxt = info[.gameCategoriesTxt].expectedStringArray
@@ -102,7 +100,7 @@ public struct GameEU {
         prettyAgeRating = info[.prettyAgeRating].expectedString
         prettyDate = info[.prettyDate].expectedString
         prettyGameCategoriesTxt = info[.prettyGameCategoriesTxt].expectedStringArray
-        priceDiscountPercentage = info[.priceDiscountPercentage].expectedInt
+        priceDiscountPercentage = info[.priceDiscountPercentage].expectedDouble
         priceLowest = info[.priceLowest].expectedDouble
         priceSorting = info[.priceSorting].expectedDouble
         sortingTitle = info[.sortingTitle].expectedString
@@ -122,6 +120,7 @@ public struct GameEU {
         addOnContent = info[.addOnContent] as? Bool
         cloudSaves = info[.cloudSaves] as? Bool
         compatibleController = info[.compatibleController] as? [String]
+        coopPlay = info[.coopPlay] as? Bool
         copyright = info[.copyright] as? String
         demoAvailability = info[.demoAvailability] as? Bool
         developer = info[.developer] as? String
